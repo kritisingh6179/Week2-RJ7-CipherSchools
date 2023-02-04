@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <h1>Event Handling</h1>
+    <!-- <button onclick="onButtonClick()">Click Here</button>
+    <script>
+        function onButtonClick(e) {
+            let h1Element = document.getElementsByTagName("h1")[0];
+            h1Element.innerText="This is Event Handling!";
+        }
+    </script> -->
+    <button>Click Here</button>
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function (e){
+            document.getElementsByTagName("h1")[0].innerText = "This is Cipher Schools!";
+        });
+    </script>
+</body>
+</html>
